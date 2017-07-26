@@ -1,0 +1,33 @@
+﻿@model MenuMvcSiteMapProvider.Models.Account
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Login</h2>
+
+@using (Html.BeginForm("Login", "Account", FormMethod.Post))
+{
+    @ViewBag.Error
+    <div>
+        <div>
+            @Html.LabelFor(model => model.Username)
+        </div>
+        <div>
+            @Html.TextBoxFor(model => model.Username)
+        </div>
+    </div>
+    <div>
+        <div>
+            @Html.LabelFor(model => model.Password)
+        </div>
+        <div>
+            @Html.PasswordFor(model => model.Password)
+        </div>
+    </div>
+
+    <div>
+        <div>
+            <input type="submit" value="登入" />
+        </div>
+    </div>
+}

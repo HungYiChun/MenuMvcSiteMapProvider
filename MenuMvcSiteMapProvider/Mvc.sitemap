@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mvcSiteMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns="http://mvcsitemap.codeplex.com/schemas/MvcSiteMap-File-4.0"
+            xsi:schemaLocation="http://mvcsitemap.codeplex.com/schemas/MvcSiteMap-File-4.0 MvcSiteMapSchema.xsd">
+
+  <!--宣告 mvcSiteMapNodeMenu，Dynamic Node Provider-->
+  <mvcSiteMapNode title="Menu" clickable="false" visibility="SiteMapPathHelper,!*">
+    <mvcSiteMapNode title="MenuList" dynamicNodeProvider="MenuMvcSiteMapProvider.Models.CustomDynamicNodeProvider, MenuMvcSiteMapProvider" />
+  </mvcSiteMapNode>
+  <!--<mvcSiteMapNode title="Home" controller="Home" action="Index">
+    <mvcSiteMapNode title="About" controller="Home" action="About"/>
+  </mvcSiteMapNode>-->
+
+</mvcSiteMap>
