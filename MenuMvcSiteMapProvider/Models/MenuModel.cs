@@ -10,6 +10,7 @@ namespace MenuMvcSiteMapProvider.Models
         public MenuModel()
             : base("name=MenuModel")
         {
+            Database.SetInitializer(new InitDatabase());
         }
 
         public virtual DbSet<Account> Account { get; set; }

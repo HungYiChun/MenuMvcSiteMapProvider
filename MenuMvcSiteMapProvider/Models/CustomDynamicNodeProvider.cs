@@ -45,6 +45,7 @@ namespace MenuMvcSiteMapProvider.Models
                         haveMenu = new string[] { "1" };
                         break;
                 }
+
                 //Custom 使用者的Menu使用權
                 foreach (string temp in haveMenu)
                 {

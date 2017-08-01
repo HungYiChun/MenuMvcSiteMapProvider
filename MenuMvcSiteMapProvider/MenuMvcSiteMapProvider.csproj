@@ -189,6 +189,7 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Account.cs" />
     <Compile Include="Models\CustomDynamicNodeProvider.cs" />
+    <Compile Include="Models\InitDatabase.cs" />
     <Compile Include="Models\Menu.cs" />
     <Compile Include="Models\MenuModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
